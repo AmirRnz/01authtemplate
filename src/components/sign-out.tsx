@@ -1,8 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { signOut } from "@/lib/auth";
 
 const SignOut = () => {
-  const handleSignOut = async () => {};
+  const handleSignOut = async () => {
+    await signOut();
+  };
 
   return (
     <div className="flex justify-center">
